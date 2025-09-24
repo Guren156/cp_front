@@ -1,0 +1,17 @@
+const placeholderImage = "https://via.placeholder.com/800x400.png?text=Notícia";
+
+const newsData = [
+    { id: 1, title: "React Lança Nova Versão", date: "2025-09-23", content: "A comunidade de desenvolvimento web está em polvorosa com o lançamento da mais recente versão do React. A v19.0 promete revolucionar a forma como criamos interfaces.", image: placeholderImage, categories: ["tecnologia", "react"], comments: [{ name: "Pedro Mariutti", text: "Incrível!" }] },
+    { id: 2, title: "Inteligência Artificial na Medicina", date: "2025-09-22", content: "Um novo algoritmo de IA demonstrou uma precisão sem precedentes no diagnóstico precoce de doenças, podendo salvar milhões de vidas.", image: placeholderImage, categories: ["tecnologia", "saúde"], comments: [{ name: "Prof de Front", text: "O futuro é agora!" }] },
+    { id: 3, title: "Mercado de Carros Elétricos Cresce 50%", date: "2025-09-21", content: "As vendas de veículos elétricos dispararam, mostrando uma clara mudança nas preferências do consumidor por transporte sustentável e economia.", image: placeholderImage, categories: ["carros"], comments: [] },
+    { id: 4, title: "Nova Sonda é Lançada para Marte", date: "2025-09-20", content: "A agência espacial NASA lançou com sucesso a sonda 'Odyssey II', que tem como missão explorar as regiões polares de Marte.", image: placeholderImage, categories: ["ciência", "espaço"], comments: [] },
+    { id: 5, title: "Dicas de Home Office e Produtividade", date: "2025-09-19", content: "Com o aumento do trabalho remoto, especialistas compartilham dicas valiosas para manter o foco e a produtividade em casa.", image: placeholderImage, categories: ["trabalho"], comments: [] },
+    { id: 6, title: "Receita de Bolo de Chocolate Fácil", date: "2025-09-18", content: "Descubra como fazer um bolo de chocolate fofinho e delicioso que vai agradar a toda a família com ingredientes simples.", image: placeholderImage, categories: ["culinária"], comments: [{ name: "Henrique Orellana", text: "Fiz e ficou perfeito!" }] },
+    { id: 7, title: "Campeonato de Futebol Define Finalistas", date: "2025-09-17", content: "Após uma semifinal emocionante, as equipes 'Tigres FC' e 'Águias Reais' garantiram suas vagas na grande final do campeonato.", image: placeholderImage, categories: ["esportes"], comments: [] },
+    { id: 8, title: "JavaScript Continua Dominando a Web", date: "2025-09-16", content: "Apesar de novas tecnologias, o JavaScript e seu ecossistema, incluindo React, continuam sendo a espinha dorsal da web moderna.", image: placeholderImage, categories: ["tecnologia", "javascript"], comments: [] },
+    { id: 9, title: "Filme de Ficção Científica Surpreende", date: "2025-09-15", content: "O novo longa 'Crônicas de Nexus' superou todas as expectativas de bilheteria em seu primeiro final de semana de estreia.", image: placeholderImage, categories: ["cinema"], comments: [] },
+    { id: 10, title: "Guia de Viagem: Melhores Destinos", date: "2025-09-14", content: "Planejando suas próximas férias? Preparamos um guia completo com destinos incríveis que cabem em todos os bolsos.", image: placeholderImage, categories: ["viagem"], comments: [] },
+];
+
+export const getAllNews = () => newsData;
+export const getNewsById = (id) => newsData.find(news => news.id == id);
